@@ -1,10 +1,14 @@
 id = "yang"
 name = "YANG Language Support"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
 authors = ["Sergei Proniakin <olitez27@gmail.com>"]
-description = "This extension provides syntax highlighting and basic support for YANG language in Zed editor."
+description = "This extension provides syntax highlighting and LSP support for YANG language in Zed editor."
 repository = "https://github.com/olitez/zed-yang"
+
+[language_servers.yang-lsp]
+name = "YANG Language Server"
+language = "YANG"
 
 [grammars.yang]
 repository = "https://github.com/Hubro/tree-sitter-yang"
