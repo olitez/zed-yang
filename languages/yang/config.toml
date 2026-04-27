@@ -2,4 +2,8 @@ name = "YANG"
 grammar = "yang"
 path_suffixes = ["yang"]
 line_comments = ["// "]
+block_comment = ["/*", "*/"]
+brackets = [
+    { start = "/*", end = " */", close = true, newline = false },
+]
 tab_size = 2
